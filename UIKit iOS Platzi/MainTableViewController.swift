@@ -7,8 +7,9 @@
 
 import UIKit
 
-class MainTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     private let titleTable: UILabel = UILabel()
+    private var typeCollectionView: UICollectionView!
     private let tableView: UITableView = UITableView()
 
     override func viewDidLoad() {
@@ -33,6 +34,16 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: MainTableViewCell.id)
+        
+        /// CollectionView
+        let horizontalLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        horizontalLayout.scrollDirection = .horizontal
+        
+        typeCollectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontalLayout)
+        typeCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        typeCollectionView.delegate = self
+        typeCollectionView.dataSource = self
+        
     }
 
     private func setupLayout() {
@@ -67,5 +78,13 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
     }
 }
