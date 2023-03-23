@@ -12,6 +12,7 @@
 		0F38E01029CA8D08000A2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E00F29CA8D08000A2F25 /* Assets.xcassets */; };
 		0F38E01329CA8D08000A2F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */; };
 		0F8597A529CCF6DA006500A0 /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */; };
+		0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */; };
 		0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */; };
 		0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		0F38E01229CA8D08000A2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F38E01429CA8D08000A2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
 				0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */,
 				0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */,
+				0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */,
 			);
 			path = "UIKit iOS Platzi";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */,
 				0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */,
 				0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */,
+				0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */,
 				0F38E00729CA8D07000A2F25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
