@@ -11,6 +11,8 @@
 		0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38E00A29CA8D07000A2F25 /* ViewController.swift */; };
 		0F38E01029CA8D08000A2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E00F29CA8D08000A2F25 /* Assets.xcassets */; };
 		0F38E01329CA8D08000A2F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */; };
+		0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */; };
+		0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0F38E00F29CA8D08000A2F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F38E01229CA8D08000A2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F38E01429CA8D08000A2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				0F38E00F29CA8D08000A2F25 /* Assets.xcassets */,
 				0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */,
 				0F38E01429CA8D08000A2F25 /* Info.plist */,
+				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
+				0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */,
 			);
 			path = "UIKit iOS Platzi";
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */,
+				0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */,
+				0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */,
 				0F38E00729CA8D07000A2F25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
