@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F17019329CD09A70093B448 /* StackViewWithScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17019229CD09A70093B448 /* StackViewWithScrollViewViewController.swift */; };
 		0F38E00729CA8D07000A2F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38E00629CA8D07000A2F25 /* AppDelegate.swift */; };
 		0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38E00A29CA8D07000A2F25 /* ViewController.swift */; };
 		0F38E01029CA8D08000A2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E00F29CA8D08000A2F25 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F17019229CD09A70093B448 /* StackViewWithScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewWithScrollViewViewController.swift; sourceTree = "<group>"; };
 		0F38E00329CA8D07000A2F25 /* UIKit iOS Platzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit iOS Platzi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F38E00629CA8D07000A2F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F38E00A29CA8D07000A2F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */,
 				0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */,
 				0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */,
+				0F17019229CD09A70093B448 /* StackViewWithScrollViewViewController.swift */,
 			);
 			path = "UIKit iOS Platzi";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				0F8597A529CCF6DA006500A0 /* TypeCollectionViewCell.swift in Sources */,
 				0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */,
+				0F17019329CD09A70093B448 /* StackViewWithScrollViewViewController.swift in Sources */,
 				0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */,
 				0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */,
 				0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */,
