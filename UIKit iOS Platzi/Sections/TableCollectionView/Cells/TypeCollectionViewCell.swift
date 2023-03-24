@@ -11,11 +11,17 @@ class TypeCollectionViewCell: UICollectionViewCell {
     static let id = "TypeCollectionViewCell"
 
     lazy var typeLabel: UILabel = UILabel()
+    
+    weak var delegate: MainTableDelegate?
 
     override var isSelected: Bool {
         didSet {
             contentView.backgroundColor = isSelected ? .systemGreen : .white
             typeLabel.textColor = isSelected ? .white : .systemGreen
+            
+            if isSelected {
+                delegate?.didTypeSelect(type: typeLabel.text ?? "")
+            }
         }
     }
 

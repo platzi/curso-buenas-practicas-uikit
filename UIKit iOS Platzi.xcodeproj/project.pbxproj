@@ -12,6 +12,7 @@
 		0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38E00A29CA8D07000A2F25 /* ViewController.swift */; };
 		0F38E01029CA8D08000A2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E00F29CA8D08000A2F25 /* Assets.xcassets */; };
 		0F38E01329CA8D08000A2F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */; };
+		0F7A883029CE4E3D00FE3943 /* MainTable+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A882F29CE4E3D00FE3943 /* MainTable+Protocols.swift */; };
 		0F8597A529CCF6DA006500A0 /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */; };
 		0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */; };
 		0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */; };
@@ -30,6 +31,7 @@
 		0F38E00F29CA8D08000A2F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F38E01229CA8D08000A2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F38E01429CA8D08000A2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F7A882F29CE4E3D00FE3943 /* MainTable+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTable+Protocols.swift"; sourceTree = "<group>"; };
 		0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB795BF29CD25EF007CF074 /* MainTable+Delegates.swift */,
+				0F7A882F29CE4E3D00FE3943 /* MainTable+Protocols.swift */,
 				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
 				0FD7ED9B29CD1CB800376401 /* Cells */,
 			);
@@ -267,6 +270,7 @@
 				0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */,
 				0FB795C029CD25EF007CF074 /* MainTable+Delegates.swift in Sources */,
 				0FB795C329CD2868007CF074 /* UIView+Extensions.swift in Sources */,
+				0F7A883029CE4E3D00FE3943 /* MainTable+Protocols.swift in Sources */,
 				0F17019329CD09A70093B448 /* StackViewWithScrollViewViewController.swift in Sources */,
 				0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */,
 				0FB795C529CD64CE007CF074 /* UILabel+Extensions.swift in Sources */,
