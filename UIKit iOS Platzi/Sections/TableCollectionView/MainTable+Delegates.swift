@@ -41,10 +41,19 @@ extension MainTableViewController: UICollectionViewDelegate, UICollectionViewDat
         }
 
         cell.setup(title: "Type")
+        cell.delegate = self
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 60, height: 35)
+    }
+}
+
+// MARK: - Custom delegates
+
+extension MainTableViewController: MainTableDelegate {
+    func didTypeSelect(type: String) {
+        print(type)
     }
 }
