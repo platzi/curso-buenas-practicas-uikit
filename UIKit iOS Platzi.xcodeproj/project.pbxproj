@@ -62,18 +62,122 @@
 		0F38E00529CA8D07000A2F25 /* UIKit iOS Platzi */ = {
 			isa = PBXGroup;
 			children = (
-				0F38E00629CA8D07000A2F25 /* AppDelegate.swift */,
-				0F38E00A29CA8D07000A2F25 /* ViewController.swift */,
-				0F38E00F29CA8D08000A2F25 /* Assets.xcassets */,
-				0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */,
-				0F38E01429CA8D08000A2F25 /* Info.plist */,
-				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
-				0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */,
-				0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */,
-				0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */,
-				0F17019229CD09A70093B448 /* StackViewWithScrollViewViewController.swift */,
+				0FD7ED8E29CD1B4F00376401 /* Application */,
+				0FD7ED9329CD1BEF00376401 /* Helpers */,
+				0FD7ED9529CD1BFF00376401 /* Libraries */,
+				0FD7ED8F29CD1B8100376401 /* Resources */,
+				0FD7ED9129CD1BC600376401 /* Sections */,
+				0FD7ED9429CD1BF600376401 /* Shared */,
+				0FD7ED9029CD1BA100376401 /* Supporting Files */,
 			);
 			path = "UIKit iOS Platzi";
+			sourceTree = "<group>";
+		};
+		0FD7ED8E29CD1B4F00376401 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0F38E00629CA8D07000A2F25 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0FD7ED8F29CD1B8100376401 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F38E00F29CA8D08000A2F25 /* Assets.xcassets */,
+				0F38E01129CA8D08000A2F25 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FD7ED9029CD1BA100376401 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F38E01429CA8D08000A2F25 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FD7ED9129CD1BC600376401 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7ED9829CD1C2200376401 /* CollectionView */,
+				0FD7ED9629CD1C1400376401 /* Main */,
+				0FD7ED9A29CD1C3100376401 /* ScrollView */,
+				0FD7ED9929CD1C2900376401 /* StackView */,
+				0FD7ED9729CD1C1A00376401 /* TableView */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		0FD7ED9329CD1BEF00376401 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0FD7ED9429CD1BF600376401 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0FD7ED9529CD1BFF00376401 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		0FD7ED9629CD1C1400376401 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0F38E00A29CA8D07000A2F25 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0FD7ED9729CD1C1A00376401 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7ED9B29CD1CB800376401 /* Cells */,
+				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0FD7ED9829CD1C2200376401 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0FD7ED9929CD1C2900376401 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		0FD7ED9A29CD1C3100376401 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0F17019229CD09A70093B448 /* StackViewWithScrollViewViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		0FD7ED9B29CD1CB800376401 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */,
+				0F8597A429CCF6DA006500A0 /* TypeCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
