@@ -16,6 +16,10 @@
 		0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */; };
 		0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */; };
 		0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */; };
+		0FB795C029CD25EF007CF074 /* MainTable+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB795BF29CD25EF007CF074 /* MainTable+Delegates.swift */; };
+		0FB795C329CD2868007CF074 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB795C229CD2868007CF074 /* UIView+Extensions.swift */; };
+		0FB795C529CD64CE007CF074 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB795C429CD64CE007CF074 /* UILabel+Extensions.swift */; };
+		0FB795C729CD64F3007CF074 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB795C629CD64F3007CF074 /* UITextField+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		0FA3351F29CCFFE400D55DBB /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		0FA4C71729CBCCA200D44BC8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		0FB795BF29CD25EF007CF074 /* MainTable+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTable+Delegates.swift"; sourceTree = "<group>"; };
+		0FB795C229CD2868007CF074 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0FB795C429CD64CE007CF074 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		0FB795C629CD64F3007CF074 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				0FD7ED8E29CD1B4F00376401 /* Application */,
+				0FB795C129CD27EC007CF074 /* Extensions */,
 				0FD7ED9329CD1BEF00376401 /* Helpers */,
 				0FD7ED9529CD1BFF00376401 /* Libraries */,
 				0FD7ED8F29CD1B8100376401 /* Resources */,
@@ -71,6 +80,16 @@
 				0FD7ED9029CD1BA100376401 /* Supporting Files */,
 			);
 			path = "UIKit iOS Platzi";
+			sourceTree = "<group>";
+		};
+		0FB795C129CD27EC007CF074 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FB795C429CD64CE007CF074 /* UILabel+Extensions.swift */,
+				0FB795C629CD64F3007CF074 /* UITextField+Extensions.swift */,
+				0FB795C229CD2868007CF074 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0FD7ED8E29CD1B4F00376401 /* Application */ = {
@@ -101,11 +120,10 @@
 		0FD7ED9129CD1BC600376401 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				0FD7ED9829CD1C2200376401 /* CollectionView */,
 				0FD7ED9629CD1C1400376401 /* Main */,
 				0FD7ED9A29CD1C3100376401 /* ScrollView */,
 				0FD7ED9929CD1C2900376401 /* StackView */,
-				0FD7ED9729CD1C1A00376401 /* TableView */,
+				0FD7ED9729CD1C1A00376401 /* TableCollectionView */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -139,20 +157,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0FD7ED9729CD1C1A00376401 /* TableView */ = {
+		0FD7ED9729CD1C1A00376401 /* TableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				0FD7ED9B29CD1CB800376401 /* Cells */,
+				0FB795BF29CD25EF007CF074 /* MainTable+Delegates.swift */,
 				0FA4C71529CBC91C00D44BC8 /* MainTableViewController.swift */,
+				0FD7ED9B29CD1CB800376401 /* Cells */,
 			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		0FD7ED9829CD1C2200376401 /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CollectionView;
+			path = TableCollectionView;
 			sourceTree = "<group>";
 		};
 		0FD7ED9929CD1C2900376401 /* StackView */ = {
@@ -250,10 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB795C729CD64F3007CF074 /* UITextField+Extensions.swift in Sources */,
 				0F8597A529CCF6DA006500A0 /* TypeCollectionViewCell.swift in Sources */,
 				0F38E00B29CA8D07000A2F25 /* ViewController.swift in Sources */,
+				0FB795C029CD25EF007CF074 /* MainTable+Delegates.swift in Sources */,
+				0FB795C329CD2868007CF074 /* UIView+Extensions.swift in Sources */,
 				0F17019329CD09A70093B448 /* StackViewWithScrollViewViewController.swift in Sources */,
 				0FA4C71629CBC91C00D44BC8 /* MainTableViewController.swift in Sources */,
+				0FB795C529CD64CE007CF074 /* UILabel+Extensions.swift in Sources */,
 				0FA4C71829CBCCA200D44BC8 /* MainTableViewCell.swift in Sources */,
 				0FA3352029CCFFE400D55DBB /* StackViewViewController.swift in Sources */,
 				0F38E00729CA8D07000A2F25 /* AppDelegate.swift in Sources */,
@@ -397,7 +413,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HL988EL7HV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIKit iOS Platzi/Info.plist";
+				INFOPLIST_FILE = "UIKit iOS Platzi/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -428,7 +444,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HL988EL7HV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIKit iOS Platzi/Info.plist";
+				INFOPLIST_FILE = "UIKit iOS Platzi/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
