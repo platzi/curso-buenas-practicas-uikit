@@ -1,26 +1,19 @@
-//
-//  TypeCollectionViewCell.swift
-//  UIKit iOS Platzi
-//
-//  Created by René Sandoval on 23/03/23.
-//
-
 import UIKit
 
 class TypeCollectionViewCell: UICollectionViewCell {
     static let id = "TypeCollectionViewCell"
 
     lazy var typeLabel: UILabel = UILabel()
-    
+
     weak var delegate: MainTableDelegate?
 
     override var isSelected: Bool {
         didSet {
             contentView.backgroundColor = isSelected ? .systemGreen : .white
             typeLabel.textColor = isSelected ? .white : .systemGreen
-            
+
             if isSelected {
-                delegate?.didTypeSelect(type: typeLabel.text ?? "")
+                delegate?.didTypeSelected(type: typeLabel.text ?? "")
             }
         }
     }

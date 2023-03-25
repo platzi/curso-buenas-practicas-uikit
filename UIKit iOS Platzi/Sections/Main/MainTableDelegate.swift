@@ -6,5 +6,5 @@
 //
 
 protocol MainTableDelegate: AnyObject {
-    func didTypeSelect(type: String)
+    func didTypeSelected(type: String)
 }
