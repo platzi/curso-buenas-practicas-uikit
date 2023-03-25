@@ -9,9 +9,9 @@ import UIKit
 
 // MARK: - TableView
 
-extension MainTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfItems()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -19,8 +19,21 @@ extension MainTableViewController: UITableViewDelegate, UITableViewDataSource {
             fatalError("Could not cast MainTableViewCell")
         }
 
-        cell.setup(name: "Nombre", image: UIImage(named: "platziSpace")!)
+        cell.setup(item: viewModel.item(at: indexPath))
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = viewModel.item(at: indexPath)
+
+        switch item.type {
+        case .basic:
+            context?.initialize(coordinator: BasicComponentsCoordinator(context: context!))
+        case .stackView:
+            context?.initialize(coordinator: LoginCoordinator(context: context!))
+        default:
+            context?.initialize(coordinator: ScrollViewCoordinator(context: context!))
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -30,7 +43,7 @@ extension MainTableViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - CollectionView
 
-extension MainTableViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -40,7 +53,7 @@ extension MainTableViewController: UICollectionViewDelegate, UICollectionViewDat
             fatalError("Could not cast TypeCollectionViewCell")
         }
 
-        cell.setup(title: "Type")
+        cell.setup(title: "Type \(Int.random(in: 1 ..< 10))")
         cell.delegate = self
         return cell
     }
@@ -50,10 +63,18 @@ extension MainTableViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 }
 
-// MARK: - Custom delegates
+// MARK: - Delegates
 
-extension MainTableViewController: MainTableDelegate {
-    func didTypeSelect(type: String) {
-        print(type)
+extension MainViewController: MainTableDelegate {
+    func didTypeSelected(type: String) {
+        // Create the alert controller
+        let alertController = UIAlertController(title: "Protocol", message: type, preferredStyle: .alert)
+
+        // Create the actions
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(okAction)
+
+        // Present the controller
+        present(alertController, animated: true, completion: nil)
     }
 }

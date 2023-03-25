@@ -1,5 +1,5 @@
 //
-//  MainTableViewController.swift
+//  MainViewController.swift
 //  UIKit iOS Platzi
 //
 //  Created by René Sandoval on 22/03/23.
@@ -7,10 +7,16 @@
 
 import UIKit
 
-class MainTableViewController: UIViewController {
+class MainViewController: UIViewController {
     private let titleTable: UILabel = UILabel()
     private var typeCollectionView: UICollectionView!
     private let tableView: UITableView = UITableView()
+
+    // MARK: - Properties
+
+    weak var coordinator: Coordinator?
+    weak var context: Context?
+    var viewModel: MainViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +25,26 @@ class MainTableViewController: UIViewController {
         setupView()
         setupLayout()
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadItems()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
 }
 
 // MARK: - Private methods
 
-extension MainTableViewController {
+extension MainViewController {
     private func setupView() {
         /// Title label
         titleTable.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +55,7 @@ extension MainTableViewController {
 
         /// TableView
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: MainTableViewCell.id)
@@ -69,5 +90,16 @@ extension MainTableViewController {
         tableView.topAnchor(equalTo: typeCollectionView.bottomAnchor, constant: 12)
         tableView.trailingAnchor(equalTo: view.trailingAnchor)
         tableView.bottomAnchor(equalTo: view.safeBottomAnchor)
+    }
+
+    /**
+     Get items for TableView
+     */
+    private func loadItems() {
+        viewModel?.loadItems { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
 }

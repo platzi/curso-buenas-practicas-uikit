@@ -1,5 +1,5 @@
 //
-//  StackViewWithScrollViewViewController.swift
+//  ScrollViewViewController.swift
 //  UIKit iOS Platzi
 //
 //  Created by René Sandoval on 23/03/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StackViewWithScrollViewViewController: UIViewController {
+class ScrollViewViewController: UIViewController {
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -52,6 +52,11 @@ class StackViewWithScrollViewViewController: UIViewController {
 
         setupView()
     }
+    
+    // MARK: - Properties
+
+    weak var coordinator: Coordinator?
+    weak var context: Context?
 
     private func setupView() {
         view.addSubview(scrollView)
